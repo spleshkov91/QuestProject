@@ -31,8 +31,8 @@ public class Game {
 
     public void initializeQuestions() throws IOException {
         ObjectMapper mapper = new ObjectMapper();
-        String pathJsonFile = "C:\\java_projects\\JavaRushProjects\\QuestProject\\src\\main\\resources\\game.json";
-        questions = mapper.readValue(new File(pathJsonFile),
+        String pathJson = "C:\\java_projects\\JavaRushProjects\\QuestProject\\src\\main\\resources\\game.json";
+        questions = mapper.readValue(new File(pathJson),
                 new TypeReference<Map<String, String>>(){});
 
     }
